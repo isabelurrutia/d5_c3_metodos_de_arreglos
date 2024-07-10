@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container w-50 p-3 bg-secondary mt-5 text-white">
+        <h1 class="m-2">Todo List</h1>
+        <hr>
+        <p class="m-2">Nueva tarea</p>
+        <div class="d-flex">
+            <input type="text" id="info_input" class="form-control m-2 text-dark">
+            <button id="boton_agregar" class="btn btn-success m-2">Agregar</button>
+        </div>
+        <main class="d-flex justify-content-between">
+            <div> 
+                <ul class="d-flex list-inline">
+                    <li class="me-2">Total: </li>
+                    <span id="cuenta_tareas"> </span>
+                </ul>
+                <ul class="d-flex list-inline">
+                    <li class="me-2">Realizadas: </li>
+                    <li id="realizadas"></li>
+                </ul>
+            </div>
+            <div class="me-2">
+                <ul class="d-flex list-inline">
+                    <li class="me-5"><strong>ID</strong></li>
+                    <li class="ms-5"><strong>Tareas</strong></li>
+                </ul>
+                <div id="tareas"></div>
+            </div>      
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
